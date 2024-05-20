@@ -1,0 +1,311 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans+TC);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Reset CSS */
+* {
+  transition-duration: 0.1s;
+  box-sizing: border-box;
+}
+*:hover, *:active {
+  cursor: pointer;
+  transition-duration: 0.1s;
+}
+* a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+.container {
+  height: 100%;
+  background-color: rgb(240, 240, 240);
+}
+
+.header {
+  background-image: url(../assets/Hero.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.header .title {
+  font-size: 2.5rem;
+  letter-spacing: 4px;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin: 89px auto 0 auto;
+}
+.header .selector {
+  display: flex;
+  justify-content: center;
+  margin: 96px auto 0 auto;
+}
+.header #zoneSelect {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("../assets/icons_down.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-origin: content-box;
+  background-size: 12px;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 8px;
+  width: 452px;
+  outline: none;
+  transition-duration: 0s;
+  border-radius: 4px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  font-size: 1.25rem;
+}
+.header #zoneSelect:active {
+  background-image: url("../assets/icons_up.png");
+}
+.header #zoneSelect:focus-visible {
+  border: 2px solid #FFFFFF;
+  background-image: url("../assets/icons_up.png");
+  transition-duration: 0s;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.header #zoneSelect option {
+  color: #559AC8;
+}
+.header .popular {
+  font-size: 1rem;
+  color: #121212;
+  background-color: #FFFFFF;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 20px;
+  margin: 120px auto 50px auto;
+  width: 85%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 12px;
+}
+.header .popular .buttonGroup {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.header .popular .tabBtn {
+  padding: 8px 36px;
+  color: #FFFFFF;
+  border: 0px solid #FFFFFF;
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 1.25rem;
+  border-radius: 4px;
+}
+.header .popular .tabBtn:hover {
+  background-color: #121212;
+}
+.header .popular .purple {
+  background-color: #8A82CC;
+}
+.header .popular .pink {
+  background-color: #FFA782;
+}
+.header .popular .yellow {
+  background-color: #F5D105;
+}
+.header .popular .blue {
+  background-color: #559AC8;
+}
+.header .collapse {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px dashed #559AC8;
+  width: 85%;
+  margin: 0 auto;
+}
+.header .collapse > button {
+  border-radius: 50px;
+  padding: 8px 6px 4px;
+  border: 2px solid #559AC8;
+  z-index: 1;
+  transform: translateY(16px);
+}
+
+.section .zoneTitle {
+  display: flex;
+  justify-content: center;
+  font-size: 2.5rem;
+  color: #559AC8;
+  margin: 76px auto;
+}
+
+.card_Group {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 7.5% 76px 7.5%;
+  gap: 16px;
+}
+.card_Group .card {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  width: 49%;
+}
+.card_Group .card .image {
+  background-image: url(https://raw.githubusercontent.com/hexschool/KCGTravel/master/image/%E8%8B%93%E9%9B%85%E5%8D%80/%E9%AB%98%E9%9B%84%E6%B8%85%E7%9C%9F%E5%AF%BA.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 155px;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+.card_Group .card .image .card_header {
+  background-image: linear-gradient(-180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.54) 100%);
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  color: #FFFFFF;
+  padding: 20px;
+}
+.card_Group .card .image .card_header .card_title {
+  font-size: 1.5rem;
+  margin-right: auto;
+}
+.card_Group .card .image .card_header .card_description {
+  font-size: 1rem;
+}
+.card_Group .card .card_content {
+  background-color: #FFFFFF;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+}
+.card_Group .card .card_content div {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  align-items: center;
+}
+.card_Group .card .card_content div .icon {
+  width: 20px;
+  height: 20px;
+}
+.card_Group .card .card_content div .clock {
+  fill: #8A82CC;
+}
+.card_Group .card .card_content div .pin {
+  fill: #FFA782;
+}
+.card_Group .card .card_content div .phone {
+  fill: #559AC8;
+}
+.card_Group .card .card_content div .tag {
+  fill: #F5D105;
+}
+.card_Group .card .card_content p {
+  width: 100%;
+}
+
+#toTop {
+  position: fixed;
+  bottom: 48px;
+  right: 48px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  border: 1px solid #FFFFFF;
+  border-radius: 4px;
+  overflow: hidden;
+}
+#toTop:hover {
+  transform: scale(1.1);
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 40px;
+}
+.pagination .page {
+  padding: 8px;
+  color: #121212;
+}
+.pagination .page:hover {
+  color: #559AC8;
+}
+.pagination .noValue {
+  color: rgba(73, 73, 73, 0.5);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 24px 0;
+  background: #559AC8;
+}
+footer .copyright {
+  color: #FFFFFF;
+  font-size: 1rem;
+}
+footer .yellow {
+  color: #F5D105;
+}/*# sourceMappingURL=style.css.map */
