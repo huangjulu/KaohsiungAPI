@@ -79,6 +79,7 @@ body {
   background-image: url(../assets/Hero.png);
   background-repeat: no-repeat;
   background-position: top center;
+  background-size: contain;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -132,8 +133,8 @@ body {
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
   border-radius: 8px;
   padding: 20px;
-  margin: 80px auto 50px auto;
-  width: 90%;
+  margin: 120px auto 50px auto;
+  width: 85%;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -172,7 +173,7 @@ body {
   justify-content: center;
   align-items: center;
   border-bottom: 2px dashed #559AC8;
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
 }
 .header .collapse > button {
