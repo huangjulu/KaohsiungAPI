@@ -121,6 +121,7 @@ body {
     background-image: url(../assets/Hero.png);
     background-repeat: no-repeat;
     background-position: top center;
+    background-size: contain;
 
     @include displayflex;
     flex-direction: column;
@@ -168,8 +169,8 @@ body {
         box-shadow: $shadow-m;
         border-radius: $border-radius-m;
         padding: 20px;
-        margin: 80px auto 50px auto;
-        width: 90%;
+        margin: 120px auto 50px auto;
+        width: 85%;
 
         @include displayflex;
         flex-direction: column;
@@ -207,7 +208,7 @@ body {
         @include displayflex;
         align-items: center;
         border-bottom: 2px dashed $primary;
-        width: 90%;
+        width: 85%;
         margin: 0 auto;
 
         >button{
