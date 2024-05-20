@@ -238,7 +238,7 @@ body {
 .card_Group{
     display: flex;
     flex-wrap: wrap;
-    padding: 0 40px 76px 40px;
+    padding: 0 7.5% 76px 7.5%;
     gap: 16px;
 
     .card{
@@ -271,6 +271,7 @@ body {
             }
         }
         .card_content{
+            background-color: $color-white;
             padding: 20px;
             @include displayflex;
             flex-direction: column;
