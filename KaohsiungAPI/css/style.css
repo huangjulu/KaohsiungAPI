@@ -196,7 +196,7 @@ body {
 .card_Group {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 40px 76px 40px;
+  padding: 0 7.5% 76px 7.5%;
   gap: 16px;
 }
 .card_Group .card {
@@ -229,6 +229,7 @@ body {
   font-size: 1rem;
 }
 .card_Group .card .card_content {
+  background-color: #FFFFFF;
   padding: 20px;
   display: flex;
   justify-content: center;
