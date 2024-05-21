@@ -29,9 +29,6 @@ window.onload = function(){
     updateZone();
 };
 
-
-
-
 // 在切換選項時判斷 zoneName 顯示卡片
 function changeZone(zone){
     
