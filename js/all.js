@@ -1,11 +1,9 @@
-import JSONdata from './data.json';
-
 //更新 Selection 裡面的 ZoneList
 function updateZone(){
 
     let zoneList = [];
     let loc = JSONdata.result.records;
-    let zoneSelect = document.querySelector('#zoneSelect');
+    let zoneSelect = document.querySelector('#zoneSelect')
 
     //將每個物件裡面分別的 Zone 挑出來，重新組陣列
     for (let i = 0; i < loc.length ; i++){
@@ -27,6 +25,19 @@ function updateZone(){
 //在瀏覽器啟用時就載入此 func
 window.onload = function(){
     updateZone();
+    //掃過所有 tabBtn 的 NoteList，在點擊時觸發 changeZone，並帶入 textContent
+    document.querySelectorAll('.tabBtn').forEach(btn => {
+        btn.addEventListener('click', function(){
+            let zone = this.textContent;
+            changeZone(zone);
+        });
+    });
+
+    //當選項改變時觸發 changeZone，並帶入 value
+    zoneSelect.addEventListener('change', function(){
+        let zone = this.value;
+        changeZone(zone);
+    });
 };
 
 // 在切換選項時判斷 zoneName 顯示卡片
@@ -97,23 +108,12 @@ function changeZone(zone){
     cardGroup.appendChild(fragment); 
     };
     //若只有一個選項時，card Group 的 justify-content 改為 center
-    cardGroup.style.justifyContent = cardGroup.childElementCount === 1 ? 'center' : 'flex-start';
+    cardGroup.style.justifyContent = (cardGroup.childElementCount === 1 ? 'center' : 'flex-start');
 
     //將 scroll 位置移到卡片區域
     window.scrollTo(0,500);
+    
 };
 
-//掃過所有 tabBtn 的 NoteList，在點擊時觸發 changeZone，並帶入 textContent
-document.querySelectorAll('.tabBtn').forEach(btn => {
-    btn.addEventListener('click', function(){
-        let zone = this.textContent;
-        changeZone(zone);
-    });
-});
 
-//當選項改變時觸發 changeZone，並帶入 value
-zoneSelect.addEventListener('change', function(){
-    let zone = this.value;
-    changeZone(zone);
-});
 
