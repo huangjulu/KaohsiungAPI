@@ -1,5 +1,5 @@
 import JSONdata from './data.json';
-
+console.log(JSONdata);
 //更新 Selection 裡面的 ZoneList
 function updateZone(){
 
@@ -99,21 +99,11 @@ function changeZone(zone){
     //再把 fragment 裡的值給 cardGroup 子層
     cardGroup.appendChild(fragment); 
     };
-    ifOneCard();
+    //若只有一個選項時，card Group 的 justify-content 改為 center
+    cardGroup.style.justifyContent = cardGroup.childElementCount === 1 ? 'center' : 'flex-start';
 
     //將 scroll 位置移到卡片區域
     window.scrollTo(0,500);
-};
-
-//若只有一個選項時，card Group 的 justify-content 改為 center
-function ifOneCard(){
-    let cardGroup = document.querySelector('.cardGroup');
-    if (cardGroup.childElementCount === 1){
-        cardGroup.style.justifyContent = 'center';
-    }
-    else {
-        cardGroup.style.justifyContent = 'flex-start';
-    };
 };
 
 //掃過所有 tabBtn 的 NoteList，在點擊時觸發 changeZone，並帶入 textContent
