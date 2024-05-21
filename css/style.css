@@ -166,7 +166,7 @@ body {
 .header .popular .btnYellow {
   background-color: #F5D105;
 }
-.header .popular .btnBlue {
+.header .popular .btnblue {
   background-color: #559AC8;
 }
 .header .collapse {
@@ -306,6 +306,6 @@ footer .copyright {
   color: #FFFFFF;
   font-size: 1rem;
 }
-footer .yellow {
+footer .textYellow {
   color: #F5D105;
 }/*# sourceMappingURL=style.css.map */
