@@ -59,7 +59,6 @@ table {
   box-sizing: border-box;
 }
 *:hover, *:active {
-  cursor: pointer;
   transition-duration: 0.1s;
 }
 * a {
@@ -107,6 +106,7 @@ body {
   background-origin: content-box;
   background-size: 12px;
   background-color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
   padding: 8px;
   width: 452px;
   outline: none;
@@ -126,6 +126,7 @@ body {
 }
 .header #zoneSelect option {
   color: #559AC8;
+  cursor: pointer;
 }
 .header .popular {
   font-size: 1rem;
@@ -153,6 +154,7 @@ body {
   font-family: "Noto Sans TC", sans-serif;
   font-size: 1.25rem;
   border-radius: 4px;
+  cursor: pointer;
 }
 .header .popular .tabBtn:hover {
   background-color: #121212;
@@ -166,7 +168,7 @@ body {
 .header .popular .btnYellow {
   background-color: #F5D105;
 }
-.header .popular .btnblue {
+.header .popular .btnBlue {
   background-color: #559AC8;
 }
 .header .collapse {
@@ -202,6 +204,7 @@ body {
 .cardGroup .card {
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
   width: 49%;
+  cursor: pointer;
 }
 .cardGroup .card .image {
   background-image: url(https://raw.githubusercontent.com/hexschool/KCGTravel/master/image/%E8%8B%93%E9%9B%85%E5%8D%80/%E9%AB%98%E9%9B%84%E6%B8%85%E7%9C%9F%E5%AF%BA.jpg);
@@ -262,6 +265,11 @@ body {
   width: 100%;
 }
 
+@media screen and (max-width: 956px) {
+  .cardGroup .card {
+    width: 100%;
+  }
+}
 #toTop {
   position: fixed;
   bottom: 48px;
