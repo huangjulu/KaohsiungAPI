@@ -157,16 +157,16 @@ body {
 .header .popular .tabBtn:hover {
   background-color: #121212;
 }
-.header .popular .purple {
+.header .popular .btnPurple {
   background-color: #8A82CC;
 }
-.header .popular .pink {
+.header .popular .btnPink {
   background-color: #FFA782;
 }
-.header .popular .yellow {
+.header .popular .btnYellow {
   background-color: #F5D105;
 }
-.header .popular .blue {
+.header .popular .btnBlue {
   background-color: #559AC8;
 }
 .header .collapse {
@@ -193,17 +193,17 @@ body {
   margin: 76px auto;
 }
 
-.card_Group {
+.cardGroup {
   display: flex;
   flex-wrap: wrap;
   padding: 0 7.5% 76px 7.5%;
   gap: 16px;
 }
-.card_Group .card {
+.cardGroup .card {
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
   width: 49%;
 }
-.card_Group .card .image {
+.cardGroup .card .image {
   background-image: url(https://raw.githubusercontent.com/hexschool/KCGTravel/master/image/%E8%8B%93%E9%9B%85%E5%8D%80/%E9%AB%98%E9%9B%84%E6%B8%85%E7%9C%9F%E5%AF%BA.jpg);
   background-repeat: no-repeat;
   background-position: center center;
@@ -213,7 +213,7 @@ body {
   display: flex;
   align-items: flex-end;
 }
-.card_Group .card .image .card_header {
+.cardGroup .card .image .cardHeader {
   background-image: linear-gradient(-180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.54) 100%);
   display: flex;
   align-items: flex-end;
@@ -221,14 +221,14 @@ body {
   color: #FFFFFF;
   padding: 20px;
 }
-.card_Group .card .image .card_header .card_title {
+.cardGroup .card .image .cardHeader .cardTitle {
   font-size: 1.5rem;
   margin-right: auto;
 }
-.card_Group .card .image .card_header .card_description {
+.cardGroup .card .image .cardHeader .cardDescription {
   font-size: 1rem;
 }
-.card_Group .card .card_content {
+.cardGroup .card .cardContent {
   background-color: #FFFFFF;
   padding: 20px;
   display: flex;
@@ -236,29 +236,29 @@ body {
   flex-direction: column;
   gap: 8px;
 }
-.card_Group .card .card_content div {
+.cardGroup .card .cardContent div {
   display: flex;
   flex-direction: row;
   gap: 4px;
   align-items: center;
 }
-.card_Group .card .card_content div .icon {
+.cardGroup .card .cardContent div .icon {
   width: 20px;
   height: 20px;
 }
-.card_Group .card .card_content div .clock {
+.cardGroup .card .cardContent div .clock {
   fill: #8A82CC;
 }
-.card_Group .card .card_content div .pin {
+.cardGroup .card .cardContent div .pin {
   fill: #FFA782;
 }
-.card_Group .card .card_content div .phone {
+.cardGroup .card .cardContent div .phone {
   fill: #559AC8;
 }
-.card_Group .card .card_content div .tag {
+.cardGroup .card .cardContent div .tag {
   fill: #F5D105;
 }
-.card_Group .card .card_content p {
+.cardGroup .card .cardContent p {
   width: 100%;
 }
 
