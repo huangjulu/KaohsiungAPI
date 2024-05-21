@@ -53,7 +53,6 @@ table {
     transition-duration: 0.1s;
     box-sizing: border-box;
     &:hover, &:active{
-        cursor: pointer;
         transition-duration: 0.1s;
     }
     a{
@@ -92,7 +91,7 @@ $border-radius-s: 4px;
 //Shadow
 $shadow-m: 0 1px 3px 0 rgba(0,0,0,0.20);
 
-@mixin custom_selector{
+@mixin customSelector{
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -140,8 +139,8 @@ body {
     }
     
     #zoneSelect {
-        @include custom_selector;
-    
+        @include customSelector;
+        cursor: pointer;
         padding:8px;
         width: 452px;
         outline: none;
@@ -159,7 +158,8 @@ body {
             background-color: rgba(255, 255, 255, 0.9);
         }
         option{
-            color: $primary;   
+            color: $primary;
+            cursor: pointer;
         }  
       }
 
@@ -188,6 +188,7 @@ body {
             font-family: 'Noto Sans TC', sans-serif;
             font-size: $font-size-m;
             border-radius: $border-radius-s;
+            cursor: pointer;
             &:hover{
                 background-color: $color-black;
             }
@@ -201,7 +202,7 @@ body {
         .btnYellow{
             background-color: $color-yellow;
         }
-        .btnblue{
+        .btnBlue{
             background-color: $color-blue;
         }
     }
@@ -238,6 +239,7 @@ body {
     .card{
         box-shadow: $shadow-m;
         width: 49%;
+        cursor: pointer;
         .image{
             background-image: url(https://raw.githubusercontent.com/hexschool/KCGTravel/master/image/%E8%8B%93%E9%9B%85%E5%8D%80/%E9%AB%98%E9%9B%84%E6%B8%85%E7%9C%9F%E5%AF%BA.jpg);
             background-repeat: no-repeat;
@@ -299,6 +301,15 @@ body {
         }
     } 
 }
+
+@media screen and (max-width: 956px) {
+    .cardGroup{
+        .card{
+            width: 100%;
+        }
+    }
+}
+
 
 #toTop{
     position: fixed;
