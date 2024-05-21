@@ -192,16 +192,16 @@ body {
                 background-color: $color-black;
             }
         }
-        .purple{
+        .btnPurple{
             background-color: $color-purple;
         }
-        .pink{
+        .btnPink{
             background-color: $color-pink;
         }
-        .yellow{
+        .btnYellow{
             background-color: $color-yellow;
         }
-        .blue{
+        .btnblue{
             background-color: $color-blue;
         }
     }
@@ -229,7 +229,7 @@ body {
         margin: 76px auto;
     }
 }
-.card_Group{
+.cardGroup{
     display: flex;
     flex-wrap: wrap;
     padding: 0 7.5% 76px 7.5%;
@@ -248,23 +248,23 @@ body {
             display: flex;
             align-items: flex-end;
 
-            .card_header{
+            .cardHeader{
                 background-image: linear-gradient(-180deg, rgba(0,0,0,0.00) 0%, rgba(0,0,0,0.54) 100%);
                 display: flex;
                 align-items: flex-end;
                 width: 100%;
                 color: $white-font;
                 padding: 20px;
-                .card_title{
+                .cardTitle{
                     font-size: $font-size-lg;
                     margin-right: auto;
                 }
-                .card_description{
+                .cardDescription{
                     font-size: $font-size-base;
                 }
             }
         }
-        .card_content{
+        .cardContent{
             background-color: $color-white;
             padding: 20px;
             @include displayflex;
@@ -341,7 +341,7 @@ footer{
         color:$color-white;
         font-size: $font-size-base;
     }
-    .yellow{
+    .textYellow{
         color: $color-yellow;
     }
 }
