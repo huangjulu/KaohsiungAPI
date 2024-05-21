@@ -1,5 +1,5 @@
 import JSONdata from './data.json';
-console.log(JSONdata);
+
 //更新 Selection 裡面的 ZoneList
 function updateZone(){
 
