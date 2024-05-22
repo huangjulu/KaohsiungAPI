@@ -283,24 +283,6 @@ body {
   transform: scale(1.1);
 }
 
-.pagination {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
-  padding: 40px;
-}
-.pagination .page {
-  padding: 8px;
-  color: #121212;
-}
-.pagination .page:hover {
-  color: #559AC8;
-}
-.pagination .noValue {
-  color: rgba(73, 73, 73, 0.5);
-}
-
 footer {
   display: flex;
   justify-content: center;
