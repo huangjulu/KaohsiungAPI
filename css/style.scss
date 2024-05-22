@@ -295,7 +295,6 @@ body {
                 }
             }
             p{
-
                 width: 100%;
             }
         }
@@ -323,24 +322,6 @@ body {
         transform: scale(1.1);
     }
 }
-.pagination{
-    @include displayflex;
-    align-items: center;
-    gap: 16px;
-    padding: 40px;
-    .page{
-        padding: 8px;
-        color: $color-black;
-        &:hover{
-            color: $color-blue;
-        }
-    }
-    // 如果有 pagination 沒有值會顯示
-    .noValue{
-        color: $color-gray;
-    }
-}
-
 footer{
     @include displayflex;
     flex-direction: column;
