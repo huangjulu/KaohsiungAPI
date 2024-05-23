@@ -175,7 +175,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: 2px dashed #559AC8;
+  border-bottom: 1px dashed #559AC8;
   width: 85%;
   margin: 0 auto;
 }

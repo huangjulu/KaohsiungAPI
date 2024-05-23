@@ -209,7 +209,7 @@ body {
     .collapse{
         @include displayflex;
         align-items: center;
-        border-bottom: 2px dashed $primary;
+        border-bottom: 1px dashed $primary;
         width: 85%;
         margin: 0 auto;
 
